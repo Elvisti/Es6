@@ -1,4 +1,5 @@
 // Irá converter o código do Es6,Es7 e Es8 em uma forma que todos os navegadores entendam e funcione
 {
-    "presets": ["@babel/preset-env"] // Entende que irá trabalhar com o navegador
+    "presets": ["@babel/preset-env"], // Entende que irá trabalhar com o navegador
+    "plugins": ["@babel/plugin-proposal-object-rest-spread"] // Instalado o plugin do rest e spread pois não estavam acoplados no babel
 }
