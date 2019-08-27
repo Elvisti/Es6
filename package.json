@@ -10,6 +10,7 @@
   },
   "scripts": {
     "dev": "babel ./main.js -o bundle.js -w",
-    "devArray": "babel ./operacoesArray.js -o bundle.js -w"
+    "devArray": "babel ./operacoesArray.js -o bundle.js -w",
+    "devArrowFunction": "babel ./arrowFunction.js -o bundle.js -w"
   }
 }

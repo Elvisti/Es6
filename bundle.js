@@ -1,32 +1,27 @@
 "use strict";
 
-var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]; //map = Serve para percorrer o vetor e retornar uma nova informação.
-
-var newNumeros = numeros.map(function (item) {
+var arr = [2, 4, 6, 8, 10];
+var newArr = arr.map(function (item) {
   return item * 2;
 });
-console.log(newNumeros); // Reduce irá consumir todo o Array e tranformar em uma única variável(geralmente um número)
+console.log(newArr);
 
-var sum = numeros.reduce(function (total, next) {
-  return total += next; // 0
-  // 1
-  // 1
-  // 2
-  // 3
-  // 3
-  // 6
-  // 4
-  // 10
-  // 5
-});
-console.log(sum); // filter irá percorrer o Array e retornar true para o novo Array ou false para ser filtrado, ou seja, removido do Array
+var teste = function teste() {
+  return [1, 2, 3];
+};
 
-var filter = numeros.filter(function (item) {
-  return item % 2 === 0;
-});
-console.log(filter); // find irá verificar se existe alguma informação dentro do Array ou tentar encontrar a informação
+console.log(teste);
 
-var find = numeros.find(function (item) {
-  return item === 25; // busca pelo valor 25 dentro do Array caso exista(true), retorna o valor, caso contrário(false) retorna undefined 
-});
-console.log(find);
+var teste1 = function teste1() {
+  return 'Elvis';
+};
+
+console.log(teste1); // Quando retornar um objeto, precisa inserir os parênteses antes das chaves.
+
+var teste2 = function teste2() {
+  return {
+    idade: 25
+  };
+};
+
+console.log(teste2);
