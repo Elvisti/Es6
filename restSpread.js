@@ -105,3 +105,53 @@ document.getElementById('novotodo').onclick = function(){
 }
 
 MinhaLista.mostrarUsuario()
+
+
+// Trabalhando com promisses e async await
+const minhaPromisse =  () => new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve('ok')
+    }, 2000);
+})
+
+// Com o async function vira uma promissa, podendo esperar o resultado através do await
+/*async function executaPromisse(){
+    console.log(await minhaPromisse());
+    console.log(await minhaPromisse());
+    console.log(await minhaPromisse());
+    
+    //const response = await minhaPromisse()
+    //const response = await minhaPromisse()
+    
+    //console.log(response);
+
+// executando 3 vezes com .then()
+ minhaPromisse().then(reponse => {
+*       console.log(response)
+*   })
+*    minhaPromisse().then(reponse => {
+*        console.log(response)
+*   })
+*    minhaPromisse().then(reponse => {
+*      console.log(response)
+*    })
+   
+}
+
+executaPromisse()
+ 
+ Mesma coisa com await
+minhaPromisse().then(resolve =>{
+    console.log(resolve);
+    
+})
+.catch(error =>{
+    console.warn(error)
+})
+*/
+
+// Executando com arrow function
+const executaPromisse = async () => {
+    console.log(await minhaPromisse())
+}
+executaPromisse()
